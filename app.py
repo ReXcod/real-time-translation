@@ -2,7 +2,10 @@ import streamlit as st
 import whisper
 from transformers import MarianMTModel, MarianTokenizer
 from gtts import gTTS
+import sentencepiece  # Add this to ensure tokenizer loads properly
+import torch  # Add this to avoid backend errors
 import os
+
 
 # Load Whisper and MarianMT models
 whisper_model = whisper.load_model("small")

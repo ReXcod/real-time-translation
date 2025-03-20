@@ -1,0 +1,6 @@
+transformers  
+openai-whisper  
+gtts  
+sounddevice  
+scipy  
+streamlit  
